@@ -16,6 +16,14 @@ While studying pedestrian movement can be challenging due to the numerous factor
 Figure of the space including the bookstore (black rectangle on the top), trashcans (small squares on the top colored black and blue), and tents (big gray squares on the bottom) and pedestrian flow within the space. Pedestrians are represented as red circles.
 </p>
 
+# Features
+
+- Pedestrians can walk both directions (right and left). This was achieved by a direction inversion, which is the change of the longitudinal velocity $u → −u$ of the pedestrian’s walking direction.
+- Pedestrians can turn to the bookstore and enter it. Once the pedestrian is inside a bookstore, they are not leaving it.
+- Pedestrians can turn down and walk in between the tents, eventually exiting the space.
+- Pedestrians can go under the tents and stay there for some amount of time, then possibly leave and continue walking along their mean path.
+- If a pedestrian walks to one of the trashcans, it could bump into it and immediatelly come back to the center of the space, continuing walking on their mean path.
+
 # Simulation description
 ## Parameters used in the simulation
 
@@ -34,6 +42,16 @@ This simulation involves the use of several parameters to control the behavior o
 - $offset$: Enables fine-tuning of the pedestrians' positions in the simulation, introducing small displacements to avoid collisions or align the pedestrians with specific areas or paths within the virtual environment.
 
 It is important to note that adjusting these parameters can greatly impact the behavior and movement patterns of the pedestrians in the simulation. Careful consideration and testing should be undertaken to ensure a realistic and consistent virtual environment.
+
+## Mean paths
+
+We can define an average path by considering all pedestrian trajectories that connect L to R and vice versa.
+
+
+
+First part of the code is used to create a mean path for pedestrians in a simulation. The mean path is created using splines and is defined by the functions y_star, dy_star, and ddy_star. These functions are used to generate a trajectory that a group of pedestrians can follow.
+
+The code initializes the values of several parameters and generates a random initial position for the first pedestrian. It then creates an array 'ped' that will store the positions and velocities of all the pedestrians at each time step. The first row of 'ped' is initialized with the initial position and velocity of the first pedestrian.
 
 ## Method 
 
