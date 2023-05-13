@@ -18,6 +18,8 @@ Figure of the space including the bookstore (black rectangle on the top), trashc
 
 # Features
 
+[Click here to watch a simulation video](https://youtu.be/EuF8drNEohI)
+
 - Pedestrians can walk both directions (right and left). This was achieved by a direction inversion, which is the change of the longitudinal velocity $u → −u$ of the pedestrian’s walking direction.
 - Pedestrians can turn to the bookstore and enter it. Once the pedestrian is inside a bookstore, they are not leaving it.
 - Pedestrians can turn down and walk in between the tents, eventually exiting the space.
