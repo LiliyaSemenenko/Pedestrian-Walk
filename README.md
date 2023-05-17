@@ -5,7 +5,7 @@ Simulation of Pedestrian Random Walk using Brownian Motion coded in Matlab.
 
 Pedestrian movement is a complex phenomenon influenced by various factors, such as the environment, social context, and personal preferences. To better understand how people move in crowded areas and avoid collisions, I studied the pedestrian flow on a CSULB campus in front of the bookstore.
 
-This project, I used [Euler–Maruyama method](https://en.wikipedia.org/wiki/Euler%E2%80%93Maruyama_method) of approximating an stochastic differential equations to analyze how people adjust their intended path to avoid obstacles and maintain a comfortable distance from others. By examining factors like walking speed, direction, and decision-making, I gained insights into pedestrian behavior during different times of the day.
+This project, I used [Euler–Maruyama method](https://en.wikipedia.org/wiki/Euler%E2%80%93Maruyama_method) for solving stochastic differential equations numerically and to analyze how people adjust their intended path to avoid obstacles and maintain a comfortable distance from others. By examining factors like walking speed, direction, and decision-making, I gained insights into pedestrian behavior during different times of the day.
 
 While studying pedestrian movement can be challenging due to the numerous factors involved, it is essential to improving safety and efficiency in crowded areas. These findings can inform the design and management of public spaces, helping to create more comfortable and safer environments for everyone.
 
