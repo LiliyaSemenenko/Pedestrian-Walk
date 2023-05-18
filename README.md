@@ -10,7 +10,7 @@ This project, I used [Euler–Maruyama method](https://en.wikipedia.org/wiki/Eul
 While studying pedestrian movement can be challenging due to the numerous factors involved, it is essential to improving safety and efficiency in crowded areas. These findings can inform the design and management of public spaces, helping to create more comfortable and safer environments for everyone.
 
 <p align="center">
-  <img width="600" height="300" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/space_animation.gif">
+  <img width="600" height="300" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/corridor_screenshot.jpg">
 </p>
 <p align="center">
 Figure of the space including the bookstore (black rectangle on the top), trashcans (small squares on the top colored black and blue), and tents (big gray squares on the bottom) and pedestrian flow within the space. Pedestrians are represented as red circles.
@@ -18,13 +18,22 @@ Figure of the space including the bookstore (black rectangle on the top), trashc
 
 # Features
 
-[Click here to watch a simulation video](https://youtu.be/EuF8drNEohI)
-
 - Pedestrians can walk both directions (right and left). This was achieved by a direction inversion, which is the change of the longitudinal velocity $u → −u$ of the pedestrian’s walking direction.
 - Pedestrians can turn to the bookstore and enter it. Once the pedestrian is inside a bookstore, they are not leaving it.
 - Pedestrians can turn down and walk in between the tents, eventually exiting the space.
 - Pedestrians can go under the tents and stay there for some amount of time, then possibly leave and continue walking along their mean path.
 - If a pedestrian walks to one of the trashcans, it could bump into it and immediatelly come back to the center of the space, continuing walking on their mean path.
+
+<p align="center">
+  <img width="700" height="400" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/space_animation.gif">
+</p>
+
+<p align="center">
+Pedestrian Walk Animation (4x Speed)
+</p>
+<p align="center">
+Note: This animation showcases a pedestrian walk simulation sped up four times its original speed. Click on "https://youtu.be/EuF8drNEohI" to watch the original simulation on YouTube.
+</p>
 
 # Simulation description
 ## Parameters used in the simulation
@@ -48,8 +57,6 @@ It is important to note that adjusting these parameters can greatly impact the b
 ## Mean paths
 
 We can define an average path by considering all pedestrian trajectories that connect L to R and vice versa.
-
-
 
 First part of the code is used to create a mean path for pedestrians in a simulation. The mean path is created using splines and is defined by the functions y_star, dy_star, and ddy_star. These functions are used to generate a trajectory that a group of pedestrians can follow.
 
@@ -132,7 +139,7 @@ $$
 
 
 <p align="center">
-<b>Stochastic differential equation we used and applied within the code</b>
+<b>Stochastic differential equation used and applied within the code</b>
 </p>
 
 $$
@@ -156,9 +163,9 @@ $$
 <br />
 
 
-Next, we created a virtual environment using a rectangular corridor with a bookstore, tents, and trash cans to simulate pedestrian flow. We created these objects using specifications and metrics to ensure they were accurately represented in the virtual environment. To control pedestrian movement, we used a set of algorithms to ensure that pedestrians move in the right direction and avoid collisions with each other and objects.
+Next, a virtual environment was created using a rectangular corridor with a bookstore, tents, and trash cans to simulate pedestrian flow. I created these objects using specifications and metrics to ensure they were accurately represented in the virtual environment. To control pedestrian movement, I used a set of algorithms to ensure that pedestrians move in the right direction and avoid collisions with each other and objects.
 
-We then ran the simulation, adjusting the parameters and refining the code to ensure smooth and realistic pedestrian movement. By using the Euler-Maruyama method, we were able to create a robust simulation of pedestrian movement that captures the stochastic nature of pedestrian behavior in crowded environments. This knowledge can help urban planners and designers to design safer and more efficient public spaces.
+The final step was to run the simulation, adjusting the parameters and refining the code to ensure smooth and realistic pedestrian movement. By using the SDEs and Wienner process, I was able to create a robust simulation of pedestrian movement that captures the stochastic nature of pedestrian behavior in crowded environments. This knowledge can help urban planners and designers to design safer and more efficient public spaces.
 
 
 
