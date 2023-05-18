@@ -9,6 +9,8 @@ This project, I used [Euler–Maruyama method](https://en.wikipedia.org/wiki/Eul
 
 While studying pedestrian movement can be challenging due to the numerous factors involved, it is essential to improving safety and efficiency in crowded areas. These findings can inform the design and management of public spaces, helping to create more comfortable and safer environments for everyone.
 
+[![Video Title](https://img.youtube.com/vi/EuF8drNEohI/0.jpg)](https://youtu.be/EuF8drNEohI)
+
 <p align="center">
   <img width="600" height="300" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/corridor_screenshot.jpg">
 </p>
