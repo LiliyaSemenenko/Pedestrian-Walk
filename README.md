@@ -13,16 +13,16 @@ While studying pedestrian movement can be challenging due to the numerous factor
   <img width="600" height="300" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/corridor_screenshot.jpg">
 </p>
 <p align="center">
-Figure of the space including the bookstore (black rectangle on the top), trashcans (small squares on the top colored black and blue), and tents (big gray squares on the bottom) and pedestrian flow within the space. Pedestrians are represented as red circles.
+Figure of the space including the bookstore entrance (black rectangle on the top), 4 trashcans (small squares on the top colored black and blue), 4 tents (big gray squares on the bottom), and pedestrian flow within the space. Pedestrians are represented as red circles.
 </p>
 
 # Features
 
-- Pedestrians can walk both directions (right and left). This was achieved by a direction inversion, which is the change of the longitudinal velocity $u → −u$ of the pedestrian’s walking direction.
-- Pedestrians can turn to the bookstore and enter it. Once the pedestrian is inside a bookstore, they are not leaving it.
-- Pedestrians can turn down and walk in between the tents, eventually exiting the space.
-- Pedestrians can go under the tents and stay there for some amount of time, then possibly leave and continue walking along their mean path.
-- If a pedestrian walks to one of the trashcans, it could bump into it and immediatelly come back to the center of the space, continuing walking on their mean path.
+- Pedestrians have the ability to walk in both directions (right and left). This functionality is achieved by inverting their longitudinal velocity $u → -u$ to align with their new walking direction.
+- Pedestrians can make a turn towards the bookstore and enter it. Once inside the bookstore, pedestrians remain there without leaving.
+- Pedestrians can also make a turn downwards and navigate between the tents, eventually exiting the area.
+- Pedestrians have the option to walk beneath the tents and spend some time there. They may choose to leave and resume walking along their intended path.
+- If a pedestrian approaches one of the trash cans, there is a possibility of collision. In such cases, the pedestrian will return to the center of the space and continue walking along their intended path.
 
 <p align="center">
   <img width="700" height="400" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/space_animation.gif">
