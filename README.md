@@ -162,12 +162,7 @@ $$
 <br />
 <br />
 
-
-Next, a virtual environment was created using a rectangular corridor with a bookstore, tents, and trash cans to simulate pedestrian flow. I created these objects using specifications and metrics to ensure they were accurately represented in the virtual environment. To control pedestrian movement, I used a set of algorithms to ensure that pedestrians move in the right direction and avoid collisions with each other and objects.
-
-The final step was to run the simulation, adjusting the parameters and refining the code to ensure smooth and realistic pedestrian movement. By using the SDEs and Wienner process, I was able to create a robust simulation of pedestrian movement that captures the stochastic nature of pedestrian behavior in crowded environments. This knowledge can help urban planners and designers to design safer and more efficient public spaces.
-
-
+The final step was to run the simulation inside a virtual environment was created using a rectangular corridor with a bookstore, adjusting the parameters and refining the code to ensure smooth and realistic pedestrian movement. By using the SDEs and Wienner process, I was able to create a robust simulation of pedestrian movement that captures the stochastic nature of pedestrian behavior in crowded environments. This knowledge can help urban planners and designers to design safer and more efficient public spaces.
 
 ## Limitations
 
