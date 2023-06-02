@@ -10,10 +10,20 @@ In this project, I used [Euler–Maruyama method](https://en.wikipedia.org/wiki/
 While studying pedestrian movement can be challenging due to the numerous factors involved, it is essential to improving safety and efficiency in crowded areas. These findings can inform the design and management of public spaces, helping to create more comfortable and safer environments for everyone.
 
 <p align="center">
-  <img width="600" height="300" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/corridor_screenshot.jpg">
+  <img width="700" height="400" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/space_animation.gif">
 </p>
+
+<p align="center">
+Pedestrian Walk Animation (4x Speed)
+</p>
+
 <p align="center">
 Figure of the space including the bookstore entrance (black rectangle on the top), 4 trashcans (small squares on the top colored black and blue), 4 tents (big gray squares on the bottom), and pedestrian flow within the space. Pedestrians are represented as red circles.
+</p>
+
+
+<p align="center">
+Click on "https://youtu.be/EuF8drNEohI" to watch the original simulation on YouTube.
 </p>
 
 # Features
@@ -23,17 +33,6 @@ Figure of the space including the bookstore entrance (black rectangle on the top
 - Pedestrians can also make a turn downwards and navigate between the tents, eventually exiting the area.
 - Pedestrians have the option to walk beneath the tents and spend some time there. They may choose to leave and resume walking along their intended path.
 - If a pedestrian approaches one of the trash cans, there is a possibility of collision. In such cases, the pedestrian will return to the center of the space and continue walking along their intended path.
-
-<p align="center">
-  <img width="700" height="400" src="https://github.com/LiliyaSemenenko/Pedestrian-Walk/blob/main/space_animation.gif">
-</p>
-
-<p align="center">
-Pedestrian Walk Animation (4x Speed)
-</p>
-<p align="center">
-Note: This animation showcases a pedestrian walk simulation sped up four times its original speed. Click on "https://youtu.be/EuF8drNEohI" to watch the original simulation on YouTube.
-</p>
 
 # Simulation description
 ## Parameters used in the simulation
@@ -106,12 +105,13 @@ $$
 The random variables $\Delta W_{n}$ are independent and identically distributed normal random variables with expected value zero and variance $\Delta t$.
 
 <br />
-<br />
 
 <p align="center">
 <b>Normal vector, radius of curvature, and centripetal force</b>
 </p>
 
+ <br />
+ 
 Before making any SDEs, we need to calulate the normal vector ($\vec{n}$), rho ($\rho$), and centripetal force ($F_{\text {cent}}$) terms to model the curvature of the path and the effects of centripetal forces on pedestrian motion.
 
 - $\vec{n}$: represents the normal vector pointing towards the center of curvature of the path that the pedestrian is following. It is calculated based on the slope of the path at the current position of the pedestrian.
@@ -133,15 +133,15 @@ F_{\text {cent}} = \vec{n} \cdot \frac{U^2 + V^2}{\rho}
 $$
 
 
-
-<br />
-<br />
+<br /> 
 
 
 <p align="center">
 <b>Stochastic differential equation used and applied within the code</b>
 </p>
 
+ <br />
+ 
 $$
 d X=U \cdot d t
 $$
